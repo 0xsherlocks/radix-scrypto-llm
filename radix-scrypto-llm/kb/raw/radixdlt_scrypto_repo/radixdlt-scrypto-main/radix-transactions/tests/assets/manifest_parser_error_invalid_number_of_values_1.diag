@@ -1,0 +1,14 @@
+error: expected 1 number of values, found 2
+  |
+1 |   CALL_METHOD
+2 |       Address(
+  |  _____________^
+3 | |       "component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh",
+4 | |       "component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+  | |____________________________________________________________________________^ expected 1 number of values
+5 |       "lock_fee"
+6 |   ;
+7 |   SET_COMPONENT_ROYALTY
+8 |       Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+9 |       "method_with_no_package_royalty"
+  |

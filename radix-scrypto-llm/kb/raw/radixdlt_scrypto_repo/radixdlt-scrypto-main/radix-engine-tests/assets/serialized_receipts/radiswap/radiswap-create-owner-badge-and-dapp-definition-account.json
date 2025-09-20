@@ -1,0 +1,145 @@
+{
+  "kind": "CommitSuccess",
+  "state_updates_summary": {
+    "new_entities": [
+      "account_sim129uea6ms5wjstpze559am5ddw293cr2nxeqrha4ae4536dlw5x8whd",
+      "resource_sim1nffzs2zlcuna0scr307jnkrws4yjqedqrer6nape2e5vwrn8vlgstn"
+    ],
+    "metadata_updates": {
+      "resource_sim1nffzs2zlcuna0scr307jnkrws4yjqedqrer6nape2e5vwrn8vlgstn": {
+        "info_url": {
+          "Set": {
+            "kind": "Url",
+            "value": "https://radiswap.radixdlt.com/"
+          }
+        },
+        "name": {
+          "Set": {
+            "kind": "String",
+            "value": "Radiswap - dApp Owner Badge"
+          }
+        },
+        "description": {
+          "Set": {
+            "kind": "String",
+            "value": "[EXAMPLE] The owner badge for the Radiswap dApp and associated entities"
+          }
+        },
+        "tags": {
+          "Set": {
+            "kind": "StringArray",
+            "value": [
+              "badge",
+              "dex",
+              "pool",
+              "radiswap"
+            ]
+          }
+        }
+      },
+      "account_sim129uea6ms5wjstpze559am5ddw293cr2nxeqrha4ae4536dlw5x8whd": {
+        "claimed_websites": {
+          "Set": {
+            "kind": "OriginArray",
+            "value": [
+              "https://radiswap.radixdlt.com"
+            ]
+          }
+        },
+        "info_url": {
+          "Set": {
+            "kind": "Url",
+            "value": "https://radiswap.radixdlt.com/"
+          }
+        },
+        "name": {
+          "Set": {
+            "kind": "String",
+            "value": "Radiswap dApp Definition"
+          }
+        },
+        "owner_badge": {
+          "Set": {
+            "kind": "NonFungibleLocalId",
+            "value": "[51799eeb70a3a5058459a50bddd1ad728b1c0d5336403bf6bdcd691d37ee]"
+          }
+        },
+        "description": {
+          "Set": {
+            "kind": "String",
+            "value": "[EXAMPLE] The Radiswap dApp definition account"
+          }
+        },
+        "owner_keys": {
+          "Set": {
+            "kind": "PublicKeyHashArray",
+            "value": [
+              {
+                "kind": "Ed25519",
+                "value": "799eeb70a3a5058459a50bddd1ad728b1c0d5336403bf6bdcd691d37ee"
+              }
+            ]
+          }
+        },
+        "account_type": {
+          "Set": {
+            "kind": "String",
+            "value": "dapp definition"
+          }
+        },
+        "tags": {
+          "Set": {
+            "kind": "StringArray",
+            "value": [
+              "dex",
+              "pool",
+              "radiswap"
+            ]
+          }
+        }
+      }
+    },
+    "non_fungible_data_updates": {
+      "resource_sim1nffzs2zlcuna0scr307jnkrws4yjqedqrer6nape2e5vwrn8vlgstn:#1#": "5c2100"
+    },
+    "newly_minted_non_fungibles": [
+      "resource_sim1nffzs2zlcuna0scr307jnkrws4yjqedqrer6nape2e5vwrn8vlgstn:#1#"
+    ]
+  },
+  "worktop_changes": {
+    "1": [
+      {
+        "kind": "Put",
+        "value": {
+          "kind": "Ids",
+          "resource_address": "resource_sim1nffzs2zlcuna0scr307jnkrws4yjqedqrer6nape2e5vwrn8vlgstn",
+          "ids": [
+            "#1#"
+          ]
+        }
+      }
+    ],
+    "2": [
+      {
+        "kind": "Take",
+        "value": {
+          "kind": "Ids",
+          "resource_address": "resource_sim1nffzs2zlcuna0scr307jnkrws4yjqedqrer6nape2e5vwrn8vlgstn",
+          "ids": [
+            "#1#"
+          ]
+        }
+      }
+    ]
+  },
+  "fee_summary": {
+    "execution_fees_in_xrd": "0.3535163",
+    "finalization_fees_in_xrd": "0.21777715",
+    "storage_fees_in_xrd": "0.56056975354",
+    "royalty_fees_in_xrd": "0"
+  },
+  "locked_fees": {
+    "contingent": "0",
+    "non_contingent": "5000"
+  }
+}

@@ -1,0 +1,15 @@
+error: invalid package address 'package_1p4r4955skdjq9swg8s5jguvcjvyj7tsxct87a9z6sw76cdfd2jg3zk'
+   |
+ 2 |     Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+ 3 |     "lock_fee"
+ 4 |     Decimal("500")
+ 5 | ;
+ 6 | ALLOCATE_GLOBAL_ADDRESS
+ 7 |     Address("package_1p4r4955skdjq9swg8s5jguvcjvyj7tsxct87a9z6sw76cdfd2jg3zk")
+   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invalid package address
+ 8 |     "Package"
+ 9 |     AddressReservation("my_reservation")
+10 |     NamedAddress("my_package")
+11 | ;
+12 | PUBLISH_PACKAGE_ADVANCED
+   |

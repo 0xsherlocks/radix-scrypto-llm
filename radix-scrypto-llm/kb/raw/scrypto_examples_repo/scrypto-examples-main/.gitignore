@@ -1,0 +1,21 @@
+# Visual studio code
+core/*/.vscode
+defi/*/.vscode
+nft/*/.vscode
+
+# macOS folder attributes
+.DS_Store
+
+# Rust auto-generated
+target/
+Cargo.lock
+**/*.rs.bk
+
+# Flamegraph profiles
+flamegraph.svg
+
+# IntelliJ
+.idea/
+
+# Emacs
+*~

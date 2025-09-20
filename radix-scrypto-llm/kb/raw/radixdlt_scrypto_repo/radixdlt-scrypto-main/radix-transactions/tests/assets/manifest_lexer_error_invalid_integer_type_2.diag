@@ -1,0 +1,11 @@
+error: invalid integer type '_'
+  |
+3 |     "lock_fee"
+4 | ;
+5 | CALL_METHOD
+6 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+7 |     "some_method"
+8 |     3_0u32
+  |      ^ invalid integer type
+9 | 
+  |

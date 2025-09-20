@@ -1,0 +1,15 @@
+error: undefined bucket 'another_xrd_bucket'
+   |
+10 |   Bucket("xrd_bucket");
+11 | 
+12 | CALL_METHOD
+13 |   Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+14 |   "buy_gumball"
+15 |   Bucket("another_xrd_bucket");
+   |          ^^^^^^^^^^^^^^^^^^^^ undefined bucket
+16 | 
+17 | ASSERT_WORKTOP_CONTAINS_ANY
+18 |   Address("resource_sim1t5q5qqum600pwwu27zl7m4rpr8g0400e72n368g09tgnptqe6kuwst");
+19 | 
+20 | ASSERT_WORKTOP_CONTAINS
+   |

@@ -1,0 +1,14 @@
+error: expected 2 number of types, found 0
+   |
+ 5 |   
+ 6 |   CALL_METHOD
+ 7 |       Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+ 8 |       "some_method"
+ 9 |       # Invalid array specification
+10 |       Map<
+   |  ________^
+11 | | 
+12 | |     >
+   | |_____^ expected 2 number of types
+13 |   ;
+   |

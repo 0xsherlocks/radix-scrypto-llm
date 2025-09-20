@@ -1,0 +1,15 @@
+error: expected 2 number of types, found 3
+   |
+19 |         None,
+20 |         None,
+21 |         None
+22 |     )
+23 |     Tuple(
+24 |         Map<String, Tuple, Tuple>(
+   |             ^^^^^^^^^^^^^^^^^^^^ expected 2 number of types
+25 |         "name" => Tuple(
+26 |                 Some(Enum<Metadata::String>("MyResource")),
+27 |                 true
+28 |             )
+29 |         ),
+   |

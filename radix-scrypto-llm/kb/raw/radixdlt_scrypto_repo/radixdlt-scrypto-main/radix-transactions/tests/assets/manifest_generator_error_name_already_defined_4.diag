@@ -1,0 +1,15 @@
+error: name already defined 'xrd'
+   |
+10 |   Bucket("xrd");
+11 | 
+12 | TAKE_FROM_WORKTOP
+13 |   Address("resource_sim1t45r6lyr36ypj64sumrmkk9pjesfyl9na849jz00qrwnx28c8sletw")
+14 |   Decimal("1.0")
+15 |   Bucket("xrd");
+   |          ^^^^^ name already defined
+16 | 
+17 | CALL_METHOD
+18 |   Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+19 |   "buy_gumball"
+20 |   Bucket("xrd");
+   |

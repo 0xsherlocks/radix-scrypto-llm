@@ -1,0 +1,18 @@
+[package]
+name = "wasm-benchmarks-lib"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+# Ref: https://bheisler.github.io/criterion.rs/book/faq.html#cargo-bench-gives-unrecognized-option-errors-for-valid-command-line-options
+bench = false
+
+[dependencies]
+radix-common = { path = "../../radix-common", default-features = false }
+
+[features]
+# You should enable either `std` or `alloc`
+default = ["std"]
+std = ["radix-common/std"]
+alloc = ["radix-common/alloc"]

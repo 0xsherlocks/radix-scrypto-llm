@@ -1,0 +1,15 @@
+error: unknown enum discriminator found 'Metadata::StingArray'
+   |
+ 3 |     "lock_fee"
+ 4 | ;
+ 5 | SET_METADATA
+ 6 |     Address("resource_sim1n2pqvufl0fmexzpkl6rzk50n2seaz49jgfaqensv7ujxdlf6szr08f")
+ 7 |     "field_name"
+ 8 |     Enum<Metadata::StingArray>(
+   |          ^^^^^^^^^^^^^^^^^^^^ unknown enum discriminator
+ 9 |         Array<String>(
+10 |             "some_string",
+11 |             "another_string",
+12 |             "yet_another_string"
+13 |         )
+   |

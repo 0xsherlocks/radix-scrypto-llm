@@ -1,0 +1,15 @@
+error: unknown enum discriminator found 'OwnerRol::Updatable'
+   |
+ 1 | CALL_METHOD
+ 2 |     Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+ 3 |     "lock_fee"
+ 4 | ;
+ 5 | CREATE_ACCOUNT_ADVANCED
+ 6 |     Enum<OwnerRol::Updatable>(
+   |          ^^^^^^^^^^^^^^^^^^^ unknown enum discriminator
+ 7 |         Enum<AccessRule::AllowAll>()
+ 8 |     )
+ 9 | ;
+10 | TAKE_ALL_FROM_WORKTOP
+11 |     Address("${resource_address}")
+   |

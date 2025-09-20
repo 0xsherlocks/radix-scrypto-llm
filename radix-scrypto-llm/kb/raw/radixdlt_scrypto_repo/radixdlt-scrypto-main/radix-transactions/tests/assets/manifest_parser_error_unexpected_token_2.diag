@@ -1,0 +1,15 @@
+error: expected an instruction, found ';'
+   |
+10 | SET_COMPONENT_ROYALTY
+11 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+12 |     "method_with_xrd_package_royalty"
+13 |     Enum<0u8>()
+14 | ;
+15 | ;
+   | ^ expected an instruction
+16 | SET_COMPONENT_ROYALTY
+17 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+18 |     "method_with_usd_package_royalty"
+19 |     Enum<0u8>()
+20 | ;
+   |

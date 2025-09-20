@@ -1,0 +1,15 @@
+error: name already defined 'my_package'
+   |
+11 | ;
+12 | ALLOCATE_GLOBAL_ADDRESS
+13 |     Address("package_sim1pkgxxxxxxxxxpackgexxxxxxxxx000726633226xxxxxxxxxlk8hc9")
+14 |     "Package"
+15 |     AddressReservation("my_second_reservation")
+16 |     NamedAddress("my_package")
+   |                  ^^^^^^^^^^^^ name already defined
+17 | ;
+18 | PUBLISH_PACKAGE_ADVANCED
+19 |     Enum<AccessRule::AllowAll>()
+20 |     Tuple(
+21 |         Map<String, Tuple>()
+   |

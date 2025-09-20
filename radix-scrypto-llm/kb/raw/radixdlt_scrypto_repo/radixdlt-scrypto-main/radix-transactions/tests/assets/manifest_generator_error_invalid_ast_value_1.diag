@@ -1,0 +1,11 @@
+error: expected String, found U32
+  |
+1 | CALL_METHOD
+2 |     Address(100u32)
+  |             ^^^^^^ expected String
+3 |     "lock_fee"
+4 | ;
+5 | CALL_FUNCTION
+6 |     Address("package_sim1p4r4955skdjq9swg8s5jguvcjvyj7tsxct87a9z6sw76cdfd2jg3zk")
+7 |     "Hello"
+  |

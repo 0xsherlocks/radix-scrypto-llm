@@ -1,0 +1,33 @@
+CALL_METHOD Address("${account}") "lock_fee" Decimal("5000");
+
+# Prepare - grab token from the `Hello` component
+CALL_METHOD Address("${component}") "free_token";
+
+# Test - assertions
+ASSERT_WORKTOP_CONTAINS Address("${resource}") Decimal("1.0");
+
+# Test - worktop
+TAKE_ALL_FROM_WORKTOP Address("${resource}") Bucket("bucket1");
+RETURN_TO_WORKTOP Bucket("bucket1");
+TAKE_FROM_WORKTOP Address("${resource}") Decimal("1.0") Bucket("bucket2");
+RETURN_TO_WORKTOP Bucket("bucket2");
+
+# Test - auth zone
+CALL_METHOD Address("${account}") "create_proof_of_amount" Address("${xrd}") Decimal("5.0");
+CREATE_PROOF_FROM_AUTH_ZONE_OF_AMOUNT Address("${xrd}") Decimal("2.0") Proof("proof1");
+CLONE_PROOF Proof("proof1") Proof("proof2");
+DROP_PROOF Proof("proof1");
+DROP_PROOF Proof("proof2");
+
+# Test - bucket proof
+CALL_METHOD Address("${account}") "withdraw" Address("${xrd}") Decimal("5.0");
+DROP_AUTH_ZONE_PROOFS;
+TAKE_ALL_FROM_WORKTOP Address("${xrd}") Bucket("xrd");
+CREATE_PROOF_FROM_BUCKET_OF_ALL Bucket("xrd") Proof("proof3");
+CLONE_PROOF Proof("proof3") Proof("proof4");
+DROP_PROOF Proof("proof3");
+DROP_PROOF Proof("proof4");
+RETURN_TO_WORKTOP Bucket("xrd");
+
+# Clean up - deposit resources
+CALL_METHOD Address("${account}") "try_deposit_batch_or_abort" Expression("ENTIRE_WORKTOP") None;

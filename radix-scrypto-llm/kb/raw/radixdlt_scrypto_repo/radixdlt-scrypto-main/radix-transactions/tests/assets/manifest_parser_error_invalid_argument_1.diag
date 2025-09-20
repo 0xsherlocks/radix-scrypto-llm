@@ -1,0 +1,15 @@
+error: expected a manifest SBOR value or ';' to end an argument list, found 'SET_COMPONENT_ROYALTY'
+   |
+10 | SET_COMPONENT_ROYALTY
+11 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+12 |     "method_with_xrd_package_royalty"
+13 |     Enum<0u8>()
+14 | 
+15 | SET_COMPONENT_ROYALTY
+   | ^^^^^^^^^^^^^^^^^^^^^ expected a manifest SBOR value or ';' to end an argument list
+16 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+17 |     "method_with_usd_package_royalty"
+18 |     Enum<0u8>()
+19 | ;
+20 | SET_COMPONENT_ROYALTY
+   |

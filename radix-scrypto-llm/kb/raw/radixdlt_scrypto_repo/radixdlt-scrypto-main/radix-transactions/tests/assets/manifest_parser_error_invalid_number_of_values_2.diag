@@ -1,0 +1,12 @@
+error: expected 1 number of values, found 3
+   |
+ 3 |     "lock_fee"
+ 4 | ;
+ 5 | CALL_METHOD
+ 6 |     Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+ 7 |     "some_method"
+ 8 |     Some("radix", "is", "fun")
+   |          ^^^^^^^^^^^^^^^^^^^^ expected 1 number of values
+ 9 |     Enum<0u8>()
+10 | ;
+   |

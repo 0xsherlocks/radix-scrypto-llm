@@ -1,0 +1,11 @@
+error: unexpected character '基', expected digit, letter, quotation mark or one of punctuation characters '(', ')', '<', '>', ',', ';', '='
+   |
+ 4 | ;
+ 5 | 
+ 6 | CALL_METHOD
+ 7 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+ 8 |     "some_method"
+ 9 |     基数引擎
+   |     ^^ unexpected character
+10 | ;
+   |

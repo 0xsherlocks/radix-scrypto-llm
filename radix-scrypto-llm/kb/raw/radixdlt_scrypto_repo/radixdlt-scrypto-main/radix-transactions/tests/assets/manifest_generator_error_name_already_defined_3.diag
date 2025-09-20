@@ -1,0 +1,14 @@
+error: name already defined 'proof1a'
+   |
+ 7 |   Bucket("some_xrd")
+ 8 |   Array<NonFungibleLocalId>(
+ 9 |     NonFungibleLocalId("#123#")
+10 |   )
+11 |   Proof("proof1b");
+12 | CREATE_PROOF_FROM_BUCKET_OF_ALL Bucket("some_xrd") Proof("proof1a");
+   |                                                          ^^^^^^^^^ name already defined
+13 | CLONE_PROOF Proof("proof1c") Proof("proof1d");
+14 | DROP_PROOF Proof("proof1d");
+15 | DROP_PROOF Proof("proof1c");
+16 | DROP_AUTH_ZONE_PROOFS;
+   |

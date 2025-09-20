@@ -1,0 +1,60 @@
+name: "Setup environment"
+description: "Common GH action to setup job environment"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install Rust toolchain
+      uses: RDXWorks-actions/toolchain@master
+      with:
+        # IMPORTANT:
+        # To update the Rust version, you must update it in the below places (including the toolchain below) in this repo:
+        # => [README.md - part 1] Update "Install Rust - we recommend to use Rust X.XX.X"
+        # => [README.md - part 2] Update "rustup default X.XX.X"
+        # => [action.yml - part 1] Update "toolchain: X.XX.X" below
+        # => [action.yml - part 2] Update the three lines starting "rustup toolchain install nightly-202?-??-??"
+        #    in the "radix-clis-scrypto-coverage" step, or update the comment explaining why a
+        #    different version is used.
+        # => [Dockerfile] Update "FROM rust:X.XX.X-slim-bookworm AS base-image" in the deterministic builder
+        # => [radix-clis/assets/template/rust-toolchain.toml_template] Update the rust version
+        # => [scrypto-install-scripts/*] Update the all version in each scripts "# Versions to install" section. Keep the current version number format:
+        #   => [scrypto-install-scripts/install-scrypto-debian.sh] "LLVM_VERSION=XX", "RUST_VERSION=X.XX.X", "RADIX_CLI_VERSION=X.X.X"
+        #   => [scrypto-install-scripts/install-scrypto-macos.sh] "LLVM_VERSION=XX", "RUST_VERSION=X.XX.X", "RADIX_CLI_VERSION=X.X.X"
+        #   => [scrypto-install-scripts/install-scrypto-windows.ps1] "$llvmVersion = 'XX.X.X'", "$rustVersion = 'X.XX.X'", "$radixCliVersion = 'X.X.X'"
+        # => [https://docs.radixdlt.com/docs/getting-rust-scrypto] Update the recommended rust version on docs
+        # Additionally, Rust version should be updated in below repos on respective branches:
+        # - babylon-node - .github/actions/setup-env/action.yml
+        # - fuzzer - .github/actions/setup-env/action.yml
+        toolchain: 1.81.0
+        default: true
+        target: wasm32-unknown-unknown
+        components: rustfmt
+
+    - name: Install nextest
+      uses: RDXWorks-actions/install-action@main
+      with:
+        tool: nextest@0.9.85
+
+    - name: Set LIBCLANG_PATH # See https://github.com/rust-lang/rust-bindgen/issues/1797
+      if: runner.os == 'Windows'
+      run: echo "LIBCLANG_PATH=$((gcm clang).source -replace "clang.exe")" >> $env:GITHUB_ENV
+      shell: bash
+    - name: Install dependencies
+      if: runner.os == 'Windows'
+      run: choco install llvm -y
+      shell: bash
+    - name: Setup cmake
+      if: runner.os == 'Linux'
+      uses: RDXWorks-actions/actions-setup-cmake@master
+      with:
+        cmake-version: "3.27.9"
+    - name: Install libclang-dev
+      if: runner.os == 'Linux'
+      run: sudo apt-get -y update && sudo apt-get install clang libclang-dev -y -f
+      shell: bash
+    - name: Setup LLVM
+      if: runner.os == 'macOS'
+      # Switch to more recent LLVM/Clang 15.0.7
+      # see: https://github.com/actions/runner-images/blob/macOS-12/20240105.3/images/macos/macos-12-Readme.md
+      run: echo "$(brew --prefix llvm@15)/bin" >> $GITHUB_PATH
+      shell: bash

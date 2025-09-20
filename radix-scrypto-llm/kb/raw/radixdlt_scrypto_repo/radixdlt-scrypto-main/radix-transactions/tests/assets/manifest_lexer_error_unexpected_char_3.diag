@@ -1,0 +1,5 @@
+error: unexpected character '7', expected '>'
+  |
+1 | x=7
+  |   ^ unexpected character
+  |

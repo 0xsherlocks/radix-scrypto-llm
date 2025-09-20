@@ -1,0 +1,15 @@
+error: blob with hash 'f531e5e82dc195a7a9f6709f5ee048d9541d51c52904b7a76295a13ddfa377b1' not found
+   |
+12 | PUBLISH_PACKAGE_ADVANCED
+13 |     Enum<AccessRule::AllowAll>()
+14 |     Tuple(
+15 |         Map<String, Tuple>()
+16 |     )
+17 |     Blob("f531e5e82dc195a7a9f6709f5ee048d9541d51c52904b7a76295a13ddfa377b1")
+   |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ blob not found
+18 |     Map<String, Tuple>()
+19 |     Some(AddressReservation("my_reservation"))
+20 | ;
+21 | CALL_FUNCTION
+22 |     NamedAddress("my_package")
+   |

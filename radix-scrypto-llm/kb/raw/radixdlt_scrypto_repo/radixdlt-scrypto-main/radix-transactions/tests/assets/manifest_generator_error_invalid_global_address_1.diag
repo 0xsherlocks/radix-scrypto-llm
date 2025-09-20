@@ -1,0 +1,15 @@
+error: invalid global address 'invalid_address'
+   |
+ 2 |     Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+ 3 |     "lock_fee"
+ 4 |     Decimal("500");
+ 5 | 
+ 6 | CALL_METHOD
+ 7 |     Address("invalid_address")
+   |             ^^^^^^^^^^^^^^^^^ invalid global address
+ 8 |     "create_proof_of_amount"
+ 9 |     Address("resource_sim1tknxxxxxxxxxradxrdxxxxxxxxx009923554798xxxxxxxxxakj8n3")
+10 |     Decimal("1");
+11 | 
+12 | MINT_FUNGIBLE
+   |

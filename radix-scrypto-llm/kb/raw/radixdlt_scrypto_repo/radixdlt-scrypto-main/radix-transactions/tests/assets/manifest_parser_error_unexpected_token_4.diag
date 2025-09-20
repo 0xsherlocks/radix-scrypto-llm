@@ -1,0 +1,10 @@
+error: expected an instruction, found "CALL_METHOD"
+   |
+ 5 | SET_COMPONENT_ROYALTY
+ 6 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+ 7 |     "method_with_no_package_royalty"
+ 8 |     Enum<0u8>()
+ 9 | ;
+10 | "CALL_METHOD"
+   | ^^^^^^^^^^^^^ expected an instruction
+   |

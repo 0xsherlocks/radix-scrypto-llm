@@ -1,0 +1,9 @@
+error: manifest actual depth 21 exceeded max 20
+  |
+1 | CALL_FUNCTION
+2 |   Address("package_sim1p4r4955skdjq9swg8s5jguvcjvyj7tsxct87a9z6sw76cdfd2jg3zk")
+3 |   "blueprint"
+4 |   "func"
+5 |   Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(Tuple(0u8)))))))))))))))))))))))))))));
+  |                                                                                                                           ^^^^^ max depth exceeded
+  |

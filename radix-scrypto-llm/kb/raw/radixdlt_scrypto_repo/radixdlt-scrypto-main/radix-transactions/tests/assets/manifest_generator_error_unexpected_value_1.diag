@@ -1,0 +1,13 @@
+error: expected String, found U32
+   |
+ 5 | CALL_METHOD
+ 6 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+ 7 |     "some_method"
+ 8 |     Array<String>(
+ 9 |       "one",
+10 |       2u32,
+   |       ^^^^ expected String
+11 |       "three"
+12 |     )
+13 | ;
+   |

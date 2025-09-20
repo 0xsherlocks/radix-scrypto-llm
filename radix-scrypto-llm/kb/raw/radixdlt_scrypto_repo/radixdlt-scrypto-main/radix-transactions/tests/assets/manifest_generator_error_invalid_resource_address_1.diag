@@ -1,0 +1,15 @@
+error: invalid resource address 'resource_address'
+   |
+13 |   Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+14 |   "buy_gumball"
+15 |   Bucket("xrd_bucket");
+16 | 
+17 | ASSERT_WORKTOP_CONTAINS_ANY
+18 |   Address("resource_address");
+   |           ^^^^^^^^^^^^^^^^^^ invalid resource address
+19 | 
+20 | ASSERT_WORKTOP_CONTAINS
+21 |   Address("resource_sim1t5q5qqum600pwwu27zl7m4rpr8g0400e72n368g09tgnptqe6kuwst")
+22 |   Decimal("3.0");
+23 | 
+   |

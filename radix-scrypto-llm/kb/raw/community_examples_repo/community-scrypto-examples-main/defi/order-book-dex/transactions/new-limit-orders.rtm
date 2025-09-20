@@ -1,0 +1,16 @@
+# Withdraw 3000 XRD from the account
+CALL_METHOD ComponentAddress("02e0905317d684478c275540e2ed7170f217e0c557805f7fd2a0d3") "withdraw_by_amount" Decimal("3000") ResourceAddress("030000000000000000000000000000000000000000000000000004");
+
+# # Create an Ask limit order for 1000 XRD at a price of 100
+TAKE_FROM_WORKTOP_BY_AMOUNT Decimal("1000") ResourceAddress("030000000000000000000000000000000000000000000000000004") Bucket("bucket1");
+CALL_METHOD ComponentAddress("02b9af5270cc62a2c357ec93bbc231aa910443ac04d05ad16f942a") "new_limit_order" Bucket("bucket1") Decimal("100");
+
+# # Create an Ask limit order for 1000 XRD at a price of 200
+TAKE_FROM_WORKTOP_BY_AMOUNT Decimal("1000") ResourceAddress("030000000000000000000000000000000000000000000000000004") Bucket("bucket2");
+CALL_METHOD ComponentAddress("02b9af5270cc62a2c357ec93bbc231aa910443ac04d05ad16f942a") "new_limit_order" Bucket("bucket2") Decimal("200");
+
+# # Create an Ask limit order for 1000 XRD at a price of 1000
+TAKE_FROM_WORKTOP_BY_AMOUNT Decimal("1000") ResourceAddress("030000000000000000000000000000000000000000000000000004") Bucket("bucket3");
+CALL_METHOD ComponentAddress("02b9af5270cc62a2c357ec93bbc231aa910443ac04d05ad16f942a") "new_limit_order" Bucket("bucket3") Decimal("1000");
+
+CALL_METHOD_WITH_ALL_RESOURCES ComponentAddress("02e0905317d684478c275540e2ed7170f217e0c557805f7fd2a0d3") "deposit_batch";

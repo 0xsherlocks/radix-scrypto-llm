@@ -1,0 +1,11 @@
+error: expected a u8 enum discriminator or valid discriminator alias, found '1u128'
+  |
+3 |     "lock_fee"
+4 | ;
+5 | SET_COMPONENT_ROYALTY
+6 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+7 |     "method_with_no_package_royalty"
+8 |     Enum<1u128>()
+  |          ^^^^^ expected a u8 enum discriminator or valid discriminator alias
+9 | ;
+  |

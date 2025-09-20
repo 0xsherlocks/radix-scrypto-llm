@@ -1,0 +1,10 @@
+error: invalid expression 'FULL_WORKTOP'
+   |
+24 |     Expression("ENTIRE_AUTH_ZONE");
+25 | 
+26 | CALL_METHOD
+27 |     Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+28 |     "deposit_batch"
+29 |     Expression("FULL_WORKTOP");
+   |                ^^^^^^^^^^^^^^ invalid expression
+   |

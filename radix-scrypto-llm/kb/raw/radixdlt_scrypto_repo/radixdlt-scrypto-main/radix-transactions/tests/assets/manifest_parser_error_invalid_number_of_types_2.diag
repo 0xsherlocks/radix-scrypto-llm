@@ -1,0 +1,15 @@
+error: expected 1 number of types, found 2
+   |
+ 5 | 
+ 6 | CREATE_NON_FUNGIBLE_RESOURCE
+ 7 |     Enum<OwnerRole::None>()
+ 8 |     Enum<NonFungibleIdType::Integer>()
+ 9 |     true
+10 |     Enum<0u8>(Enum<0u8>(Tuple(Array<String, Tuple>(), Array<Tuple>(), Array<Enum>())), Enum<0u8>(66u8), Array<String>())
+   |                                     ^^^^^^^^^^^^^ expected 1 number of types
+11 |     Tuple(
+12 |         Some(
+13 |             Tuple(
+14 |                 Some(Enum<AccessRule::AllowAll>()),
+15 |                 Some(Enum<AccessRule::DenyAll>())
+   |

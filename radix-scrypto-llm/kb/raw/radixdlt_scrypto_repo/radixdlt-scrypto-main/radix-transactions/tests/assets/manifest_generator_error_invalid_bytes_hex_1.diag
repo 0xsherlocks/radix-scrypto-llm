@@ -1,0 +1,11 @@
+error: invalid hex value 'invalid_hex'
+   |
+ 4 | ;
+ 5 | CALL_FUNCTION
+ 6 |     Address("package_sim1p4r4955skdjq9swg8s5jguvcjvyj7tsxct87a9z6sw76cdfd2jg3zk")
+ 7 |     "Hello"
+ 8 |     "instantiate_hello"
+ 9 |     Bytes("invalid_hex")
+   |           ^^^^^^^^^^^^^ invalid hex value
+10 | ;
+   |

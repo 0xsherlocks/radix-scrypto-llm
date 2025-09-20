@@ -1,0 +1,10 @@
+error: bucket id 'ManifestBucket(1)' not found
+   |
+ 7 | TAKE_ALL_FROM_WORKTOP
+ 8 |   Address("resource_sim1tknxxxxxxxxxradxrdxxxxxxxxx009923554798xxxxxxxxxakj8n3")
+ 9 |   Bucket("some_xrd");
+10 | 
+11 | BURN_RESOURCE
+12 |   Bucket(1u32);
+   |          ^^^^ bucket not found
+   |

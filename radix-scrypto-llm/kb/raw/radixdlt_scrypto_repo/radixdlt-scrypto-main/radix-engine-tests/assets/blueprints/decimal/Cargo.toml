@@ -1,0 +1,10 @@
+[package]
+name = "decimal"
+version = "1.0.0-rc1"
+edition = "2021"
+
+[dependencies]
+scrypto = { path = "../../../../scrypto" }
+
+[lib]
+crate-type = ["cdylib", "lib"]

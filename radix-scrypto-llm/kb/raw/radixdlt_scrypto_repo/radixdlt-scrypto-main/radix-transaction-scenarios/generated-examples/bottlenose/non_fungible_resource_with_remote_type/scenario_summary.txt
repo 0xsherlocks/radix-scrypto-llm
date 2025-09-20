@@ -1,0 +1,11 @@
+Name: non_fungible_resource_with_remote_type
+
+== SUMMARY HASHES ==
+These Bottlenose hashes should NEVER change, else they will cause divergence when run historically.
+State changes: 4397b1824bcd12c8 (should never change)
+Events       : c1e3b3d35e25af71 (should never change)
+
+== INTERESTING ADDRESSES ==
+- package_with_registered_types: package_sim1p4lm0y29mmmv8vplavve8he4swd06mvvtux6z6t9phyj63hgejdt2t
+- non_fungible_resource_using_registered_type: resource_sim1ngunzdy2nc7jvync9wq32k6q80w59fg0c354vyy048skx79g8kl9x6
+

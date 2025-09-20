@@ -1,0 +1,15 @@
+error: bucket id 'ManifestBucket(1)' not found
+   |
+ 7 | TAKE_ALL_FROM_WORKTOP
+ 8 |   Address("resource_sim1tknxxxxxxxxxradxrdxxxxxxxxx009923554798xxxxxxxxxakj8n3")
+ 9 |   Bucket("some_xrd");
+10 | 
+11 | CREATE_PROOF_FROM_BUCKET_OF_AMOUNT
+12 |   Bucket(1u32)
+   |          ^^^^ bucket not found
+13 |   Decimal("1")
+14 |   Proof("proof");
+15 | 
+16 | DROP_PROOF
+17 |   Proof("proof");
+   |

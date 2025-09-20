@@ -1,0 +1,11 @@
+error: cannot consume bucket 'some_bucket' because it's believed to be currently locked
+   |
+18 |   Bucket("some_bucket")
+19 |   Decimal("1")
+20 |   Proof("proof");
+21 | 
+22 | RETURN_TO_WORKTOP
+23 |     Bucket("some_bucket");
+   |            ^^^^^^^^^^^^^ bucket locked
+24 | 
+   |

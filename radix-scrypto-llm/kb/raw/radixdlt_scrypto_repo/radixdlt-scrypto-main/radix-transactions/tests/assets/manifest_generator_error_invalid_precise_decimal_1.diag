@@ -1,0 +1,11 @@
+error: invalid precise decimal '1.' - EmptyFractionalPart
+   |
+ 4 | ;
+ 5 | CALL_FUNCTION
+ 6 |     Address("package_sim1p4r4955skdjq9swg8s5jguvcjvyj7tsxct87a9z6sw76cdfd2jg3zk")
+ 7 |     "Hello"
+ 8 |     "instantiate_hello"
+ 9 |     PreciseDecimal("1.")
+   |                    ^^^^ invalid precise decimal
+10 | ;
+   |

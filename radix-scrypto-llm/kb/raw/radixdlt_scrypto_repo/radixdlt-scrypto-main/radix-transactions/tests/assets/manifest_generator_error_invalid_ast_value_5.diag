@@ -1,0 +1,11 @@
+error: expected String, found Bool
+   |
+ 6 | CALL_METHOD
+ 7 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+ 8 |     "some_method"
+ 9 |     "text mixed with 🤓 and 🥸 unicodes"
+10 |     "\uD83D\uDC69"
+11 |     Decimal(true)
+   |             ^^^^ expected String
+12 | ;
+   |

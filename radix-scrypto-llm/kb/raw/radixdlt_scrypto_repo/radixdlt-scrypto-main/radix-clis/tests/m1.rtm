@@ -1,0 +1,7 @@
+CALL_METHOD Address("${account}") "lock_fee" Decimal("5000");
+
+# Prepare - instantiate a `Hello` component
+CALL_FUNCTION Address("${package}") "Hello" "instantiate_hello";
+
+# Clean up - deposit resources
+CALL_METHOD Address("${account}") "try_deposit_batch_or_abort" Expression("ENTIRE_WORKTOP") None;

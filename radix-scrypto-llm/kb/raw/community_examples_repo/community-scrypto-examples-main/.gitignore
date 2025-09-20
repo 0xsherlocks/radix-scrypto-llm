@@ -1,0 +1,20 @@
+# Visual studio code
+.vscode
+
+# IntelliJ Idea
+.idea
+
+# macOS folder attributes
+.DS_Store
+
+# Rust auto-generated
+target/
+Cargo.lock
+**/*.rs.bk
+
+# Flamegraph profiles
+flamegraph.svg
+
+# Front end build folders
+build/
+node_modules/

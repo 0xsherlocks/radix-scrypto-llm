@@ -1,0 +1,15 @@
+error: manifest actual depth 21 exceeded max 20
+   |
+20 |                                 Tuple(
+21 |                                   Tuple(
+22 |                                     Tuple(
+23 |                                       Tuple(
+24 |                                         Tuple(
+25 |                                           Tuple(
+   |                                           ^^^^^ max depth exceeded
+26 |                                             Tuple(
+27 |                                               Tuple(
+28 |                                                 Tuple(
+29 |                                                   Tuple(
+30 |                                                     Tuple(
+   |

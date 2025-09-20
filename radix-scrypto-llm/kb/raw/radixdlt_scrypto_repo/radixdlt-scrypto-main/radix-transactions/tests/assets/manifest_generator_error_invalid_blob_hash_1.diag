@@ -1,0 +1,15 @@
+error: invalid blob hash 'abbcc' - invalid hex value
+   |
+12 | PUBLISH_PACKAGE_ADVANCED
+13 |     Enum<AccessRule::AllowAll>()
+14 |     Tuple(
+15 |         Map<String, Tuple>()
+16 |     )
+17 |     Blob("abbcc")
+   |          ^^^^^^^ invalid blob hash
+18 |     Map<String, Tuple>()
+19 |     Some(AddressReservation("my_reservation"))
+20 | ;
+21 | CALL_FUNCTION
+22 |     NamedAddress("my_package")
+   |

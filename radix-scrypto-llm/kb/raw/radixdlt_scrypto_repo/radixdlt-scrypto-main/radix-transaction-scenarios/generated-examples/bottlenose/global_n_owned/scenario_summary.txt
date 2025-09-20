@@ -1,0 +1,11 @@
+Name: global_n_owned
+
+== SUMMARY HASHES ==
+These Bottlenose hashes should NEVER change, else they will cause divergence when run historically.
+State changes: c92ceafbc3bbda3c (should never change)
+Events       : 4f8404841812beac (should never change)
+
+== INTERESTING ADDRESSES ==
+- global_n_owned_package_address: package_sim1pkaulm4hum34fy2k0tnflzmyh2qvv9vq9kwlpxwrh68k9t36zkng96
+- global_n_owned_component_address: component_sim1cqxyfhy9p9rmw25972hj3grjpenp2ep807zdgska5s74kglakq936r
+

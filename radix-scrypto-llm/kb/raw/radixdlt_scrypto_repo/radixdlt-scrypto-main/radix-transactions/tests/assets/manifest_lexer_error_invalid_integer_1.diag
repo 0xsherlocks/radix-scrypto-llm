@@ -1,0 +1,15 @@
+error: invalid integer value '-300i8' - number too small to fit in target type
+   |
+ 2 |     Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+ 3 |     "lock_fee";
+ 4 | CALL_METHOD
+ 5 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+ 6 |     "some_method"
+ 7 |     -300i8;
+   |     ^^^^^^ invalid integer value
+ 8 | CALL_METHOD
+ 9 |     Address("account_sim1c956qr3kxlgypxwst89j9yf24tjc7zxd4up38x37zr6q4jxdx9rhma")
+10 |     "try_deposit_batch_or_abort"
+11 |     Expression("ENTIRE_WORKTOP")
+12 |     None;
+   |

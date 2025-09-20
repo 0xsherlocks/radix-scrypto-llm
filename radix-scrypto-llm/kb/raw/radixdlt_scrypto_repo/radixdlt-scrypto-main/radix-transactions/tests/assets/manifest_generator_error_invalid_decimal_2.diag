@@ -1,0 +1,11 @@
+error: invalid decimal '基数引擎' - InvalidDigit
+   |
+ 4 | ;
+ 5 | 
+ 6 | CALL_METHOD
+ 7 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+ 8 |     "some_method"
+ 9 |     Decimal("基数引擎")
+   |             ^^^^^^^^^^ invalid decimal
+10 | ;
+   |

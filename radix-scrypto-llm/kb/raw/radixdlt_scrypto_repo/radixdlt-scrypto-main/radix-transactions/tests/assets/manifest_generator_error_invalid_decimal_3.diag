@@ -1,0 +1,11 @@
+error: invalid decimal '👩' - InvalidDigit
+   |
+ 4 | ;
+ 5 | 
+ 6 | CALL_METHOD
+ 7 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+ 8 |     "some_method"
+ 9 |     Decimal("\uD83D\uDC69")
+   |             ^^^^^^^^^^^^^^ invalid decimal
+10 | ;
+   |

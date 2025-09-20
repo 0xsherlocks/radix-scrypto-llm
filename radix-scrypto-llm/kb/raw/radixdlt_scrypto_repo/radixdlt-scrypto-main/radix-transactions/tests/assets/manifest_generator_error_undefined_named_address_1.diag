@@ -1,0 +1,15 @@
+error: undefined named address 'package_address'
+   |
+17 |     Blob("f531e5e82dc195a7a9f6709f5ee048d9541d51c52904b7a76295a13ddfa377b1")
+18 |     Map<String, Tuple>()
+19 |     Some(AddressReservation("my_reservation"))
+20 | ;
+21 | CALL_FUNCTION
+22 |     NamedAddress("package_address")
+   |                  ^^^^^^^^^^^^^^^^^ undefined named address
+23 |     "BlueprintName"
+24 |     "no_such_function"
+25 |     Decimal("1.0")
+26 |     NamedAddress("my_package")
+27 | ;
+   |

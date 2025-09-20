@@ -1,0 +1,10 @@
+error: unexpected character 'x', expected '"', '\', '/', 'b', 'f', 'n', 'r', 't' or 'u'
+  |
+2 |     Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+3 |     "lock_fee"
+4 | ;
+5 | CALL_METHOD
+6 |     Address("component_sim1cpyavrltfeu9ppx24pcpvh93xf44sfjygtv6dgf6uq3cdwafl7f9rq")
+7 |     "\xaaaa"
+  |       ^ unexpected character
+  |

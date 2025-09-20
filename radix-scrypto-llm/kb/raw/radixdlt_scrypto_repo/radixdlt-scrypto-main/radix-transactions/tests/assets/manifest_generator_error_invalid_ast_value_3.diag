@@ -1,0 +1,15 @@
+error: expected Address or NamedAddress, found String
+   |
+ 8 |     "create_proof_of_amount"
+ 9 |     Address("resource_sim1tknxxxxxxxxxradxrdxxxxxxxxx009923554798xxxxxxxxxakj8n3")
+10 |     Decimal("1");
+11 | 
+12 | MINT_FUNGIBLE
+13 |     "component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh"
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected Address or NamedAddress
+14 |     Decimal("20");
+15 | 
+16 | CALL_METHOD
+17 |     Address("${account_address}")
+18 |     "deposit_batch"
+   |

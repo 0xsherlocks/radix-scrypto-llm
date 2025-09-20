@@ -1,0 +1,10 @@
+error: expected an instruction, found ';'
+  |
+1 | ;
+  | ^ expected an instruction
+2 | CALL_METHOD
+3 |     Address("component_sim1cptxxxxxxxxxfaucetxxxxxxxxx000527798379xxxxxxxxxhkrefh")
+4 |     "lock_fee"
+5 | ;
+6 | SET_COMPONENT_ROYALTY
+  |
