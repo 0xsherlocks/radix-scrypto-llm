@@ -93,9 +93,9 @@ graph TB
     D --> E[13K+ Doc Chunks]
     B --> F[LLM Selection]
     F --> G{Model Router}
-    G -->|Complex| H[Claude Sonnet 4]
-    G -->|Balanced| I[GPT-4 Turbo]
-    G -->|Simple| J[Llama 3.1 70B]
+    G -->|Complex| H[Claude Sonnet 3.5]
+    G -->|Balanced| I[anthropic/claude-3-haiku]
+    G -->|Simple| J[meta-llama/llama-3.1-8b-instruct]
     H --> K[Generated Code + Citations]
     I --> K
     J --> K
@@ -112,7 +112,7 @@ graph TB
 | **Markdown Files** | 182 files | Cleaned documentation pages |
 | **Rust Examples** | 1006 files | Extracted Scrypto code examples |
 | **Document Chunks** | 13,475+ | Vectorized knowledge segments |
-| **Total Size** | ~15MB | Comprehensive Scrypto knowledge |
+| **Total Size** | ~150+MB | Comprehensive Scrypto knowledge |
 
 ---
 
