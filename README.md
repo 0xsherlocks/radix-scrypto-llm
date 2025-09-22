@@ -156,18 +156,7 @@ radix-scrypto-llm/
 └── 📖 README.md                 # This file
 ```
 
----
 
-## 🎨 Screenshots
-
-### **Main Interface**
-![Main Interface](https://via.placeholder.com/800x400/0f1419/ffffff?text=Streamlit+RAG+Interface)
-
-### **Code Generation**
-![Code Generation](https://via.placeholder.com/800x400/1a1a2e/ffffff?text=Real-time+Code+Generation)
-
-### **Documentation Explorer**
-![Documentation](https://via.placeholder.com/800x400/16213e/ffffff?text=Interactive+Documentation)
 
 ---
 
